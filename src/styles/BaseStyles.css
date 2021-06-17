@@ -27,7 +27,7 @@ h4 {
 
 #main {
   padding: 3rem 1.25rem 1.25rem;
-  max-width: 750px;
+  max-width: 850px;
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr;

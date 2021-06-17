@@ -35,9 +35,9 @@ function App() {
     setState(state => ({ ...state, currentStep: state.currentStep + 1 }))
   }
 
-  const prevStep = () => {
-    setState(state => ({ ...state, currentStep: state.currentStep - 1 }))
-  }
+  // const prevStep = () => {
+  //   setState(state => ({ ...state, currentStep: state.currentStep - 1 }))
+  // }
 
   // console.log(emotions)
 
@@ -56,14 +56,12 @@ function App() {
             <Intro
               setState={setState}
               nextStep={nextStep}
-              prevStep={prevStep}
             /> :
             state.currentStep === 1 ?
               <EmotionInput
                 emotions={state.emotions}
                 setState={setState}
                 nextStep={nextStep}
-                prevStep={prevStep}
               /> :
               state.currentStep === 2 ?
                 <MemeSelector
@@ -71,17 +69,16 @@ function App() {
                   currentEmotion={state.currentEmotion}
                   setState={setState}
                   nextStep={nextStep}
-                  prevStep={prevStep}
+
                 /> :
                 state.currentStep === 3 ?
                   <MemeEditor
                     currentMeme={state.currentMeme}
                     nextStep={nextStep}
-                    prevStep={prevStep}
+                    setState={setState}
                   /> :
                   state.currentStep === 4 ?
                     <NextSteps
-                      prevStep={prevStep}
                     /> :
                     <React.Fragment />
         }

@@ -1,0 +1,40 @@
+#meme-editor {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  grid-gap: 1.5rem;
+  text-align: left;
+}
+
+#input-form {
+  /* background: red; */
+  text-align: left;
+}
+
+#input-form label {
+  display: block;
+  color: #000a;
+  margin-bottom: 5px;
+}
+
+#input-form input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  font-family: "Sentient", sans-serif;
+  font-size: 1rem;
+  padding: 0 10px;
+  margin-bottom: 1.5rem;
+}
+
+#meme-preview {
+  /* background: blue; */
+  text-align: left;
+}
+
+#meme-preview p {
+  margin-top: 0;
+}
+
+#meme-preview img {
+  width: 100%;
+}
