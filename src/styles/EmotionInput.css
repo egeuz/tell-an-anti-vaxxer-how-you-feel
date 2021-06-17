@@ -1,0 +1,29 @@
+#emotion-input {
+  text-align: center;
+}
+
+#question {
+  margin: 3rem 0 1rem;
+  font-weight: bold;
+}
+
+#sentence {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 10px 0; */
+}
+
+#sentence h2 {
+  margin: 0;
+  margin-right: 8px;
+  font-weight: normal;
+}
+
+#sentence select {
+  font-family: "Sentient";
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+}

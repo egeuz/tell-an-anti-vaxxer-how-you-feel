@@ -1,0 +1,42 @@
+#intro {
+  width: 100%;
+  height: calc(100vh - 17.15rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+}
+
+#intro button {
+  width: 360px;
+  max-width: none;
+  height: 64px;
+  font-size: 1.25rem;
+  border-width: 3px;
+  background: #fff;
+}
+
+#intro button:first-child {
+  background: rgb(132, 252, 102);
+}
+
+#intro button:last-child {
+  background: rgb(252, 217, 102);
+}
+
+#intro button:hover {
+  background: #000;
+}
+
+
+
+/* #intro {
+  background: white;
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#intro h1, p {
+  margin: 0;
+} */

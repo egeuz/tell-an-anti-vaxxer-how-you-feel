@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Sentient";
+  src: url("../assets/fonts/Sentient-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Sentient-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sentient";
+  src: url("../assets/fonts/Sentient-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Sentient-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sentient";
+  src: url("../assets/fonts/Sentient-Italic.woff2") format("woff2"),
+    url("../assets/fonts/Sentient-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Sentient";
+  src: url("../assets/fonts/Sentient-BoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/Sentient-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+

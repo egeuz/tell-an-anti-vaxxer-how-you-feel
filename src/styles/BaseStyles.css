@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Sentient", serif;
+}
+
+h2 {
+  margin: 0 0 1.5rem;
+  font-weight: normal;
+}
+
+h3 {
+  /* font-weight: normal; */
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 0.5rem 0;
+  color: #000a;
+}
+
+#main {
+  padding: 3rem 1.25rem 1.25rem;
+  max-width: 750px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#app > div {
+  background: white;
+  padding: 2.5rem 1.25rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+  box-shadow: 6px 6px 3px #0004, 3px 3px 3px #0004;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 180px;
+  font-size: 1rem;
+  font-family: 'Sentient', serif;
+  font-weight: bold;
+  border: 1px solid #000;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #000;
+  color: #fff;
+}
+
+button.inactive {
+  color: #999;
+  border-color: #999;
+  cursor: default;
+}
+
+button.inactive:hover {
+  color: #999;
+  border-color: #999;
+  background: none;
+}
+
+.continue-button {
+  margin-top: 3rem;
+}
