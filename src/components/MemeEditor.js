@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-function CaptionInput({ id, setInputs }) {
+function CaptionInput({ id, inputs, setInputs }) {
   const inputNo = parseInt(id[id.length - 1]) + 1
-  const [value, setValue] = useState(`caption #${inputNo}`)
+  const [value, setValue] = useState(`caption #${inputNo + 1}`)
   return (
     <input
       id={id}
@@ -11,12 +11,6 @@ function CaptionInput({ id, setInputs }) {
       value={value}
       onChange={(e) => {
         setValue(e.target.value)
-        setInputs(inputs => {
-          const i = inputs;
-          i[id] = e.target.value;
-          console.log(i)
-          return i;
-        })
       }}
     />
   )
@@ -24,24 +18,24 @@ function CaptionInput({ id, setInputs }) {
 
 function MemeEditor({ currentMeme, nextStep }) {
 
-  const [memePreview, setMemePreview] = useState("");
-  const [inputHasChanged, setInputHasChanged] = useState(false);
+  // const [memePreview, setMemePreview] = useState("");
+  // const [inputHasChanged, setInputHasChanged] = useState(false);
   const [inputs, setInputs] = useState("");
 
   useEffect(() => {
-    const initCaptionInputs = () => {
-      let inputs = {}
-      for (let i = 0; i < currentMeme.box_count; i++) {
-        inputs[`input${i}`] = `caption #${i + 1}`;
-      }
-      setInputs(inputs);
+
+    const defaultCaptions = {}
+    for (let i = 0; i < currentMeme.box_count; i++) {
+      defaultCaptions[`input${i}`] = `caption #${i + 1}`;
     }
 
-    console.log(currentMeme)
+    const initCaptionInputs = () => {
+      setInputs(defaultCaptions)
+    }
 
     const initMemePreview = async () => {
 
-      const boxes = Object.values(inputs).map(input => {
+      const boxes = Object.values(defaultCaptions).map(input => {
         return {
           text: input
         }
